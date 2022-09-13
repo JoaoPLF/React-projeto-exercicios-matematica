@@ -1,0 +1,46 @@
+.ProgressBack {
+  grid-area: barra;
+
+  height: 15px;
+  width: 100%;
+  background-color: rgb(184, 184, 184);
+
+  border-radius: 10px;
+  margin: 12px 0px;
+}
+
+.ProgressBar {
+  height: 100%;
+  background-color: blue;
+  transition: width 0.5s;
+  border-radius: 10px;
+}
+
+.Exercicios {
+  display: grid;
+  width: 500px;
+  max-width: 70%;
+  justify-items: center;
+
+  grid-template:
+    "questao questao" auto
+    "barra barra" auto
+    "pergunta pergunta" auto
+    "alternativa1 alternativa2" 100px
+    "alternativa3 alternativa4" 100px
+    / 1fr 1fr;
+}
+
+.Resultado {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.Questao {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 1px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}

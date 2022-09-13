@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ebf0f7;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Titulo {
+  font-size: 30px;
+  margin-bottom: 24px;
+}

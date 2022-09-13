@@ -1,0 +1,6 @@
+.Pergunta {
+  grid-area: pergunta;
+  text-align: center;
+  font-size: 24px;
+  margin: 16px;
+}
