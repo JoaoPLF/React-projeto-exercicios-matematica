@@ -1,7 +1,7 @@
 {
   "name": "projeto-exercicios-matematica",
   "version": "0.1.0",
-  "homepage": "https://joaoplf.github.io/ React-projeto-exercicios-matematica",
+  "homepage": "https://joaoplf.github.io/React-projeto-exercicios-matematica",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
