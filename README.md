@@ -5,3 +5,4 @@
 * Gera exercícios de mútipla escolha com números aleatórios
 * Gera alternativas de maneira aleatória, além da resposta certa
 * Apresenta ao final quais exercícios estão corretos e quais estão errados
+* Veja o projeto em ação em https://joaoplf.github.io/React-projeto-exercicios-matematica/
