@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/%20React-projeto-exercicios-matematica/static/css/main.5b9ab7af.css",
+    "main.js": "/%20React-projeto-exercicios-matematica/static/js/main.8ae36fb1.js",
+    "static/js/787.e7fe7b2a.chunk.js": "/%20React-projeto-exercicios-matematica/static/js/787.e7fe7b2a.chunk.js",
+    "index.html": "/%20React-projeto-exercicios-matematica/index.html",
+    "main.5b9ab7af.css.map": "/%20React-projeto-exercicios-matematica/static/css/main.5b9ab7af.css.map",
+    "main.8ae36fb1.js.map": "/%20React-projeto-exercicios-matematica/static/js/main.8ae36fb1.js.map",
+    "787.e7fe7b2a.chunk.js.map": "/%20React-projeto-exercicios-matematica/static/js/787.e7fe7b2a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b9ab7af.css",
+    "static/js/main.8ae36fb1.js"
+  ]
+}
