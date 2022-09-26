@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, forwardRef } from "react";
 import Questao from "./Questao/Questao";
 import Button from "../Button/Button";
 import classes from "./Exercicios.module.css";
+import { motion } from "framer-motion";
 
 const simbolo = (operacao) => {
   switch (operacao) {
@@ -13,7 +14,7 @@ const simbolo = (operacao) => {
   }
 };
 
-const Exercicios = ({ operacao, setOperacao }) => {
+const Exercicios = forwardRef(({ operacao, setOperacao }, ref) => {
   const [questoes, setQuestoes] = useState([]);
   const [n1, setN1] = useState(0);
   const [n2, setN2] = useState(0);
@@ -61,7 +62,7 @@ const Exercicios = ({ operacao, setOperacao }) => {
 
   if (questoes.length < 10) {
     return (
-      <div className={classes.Exercicios}>
+      <div className={classes.Exercicios} ref={ref}>
         <div style={{ gridArea: "questao" }}>{`Questão ${questoes.length + 1} de 10`}</div>
         <div className={classes.ProgressBack}>
           <div className={classes.ProgressBar} style={{ width: `${(questoes.length + 1) * 10}%` }} />
@@ -74,7 +75,7 @@ const Exercicios = ({ operacao, setOperacao }) => {
     const acertos = questoes.reduce((prev, q) => q.acerto ? (prev + 1) : prev, 0);
 
     return (
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }} ref={ref}>
         <div className={classes.Resultado}>{`Você acertou ${acertos > 1 ? (acertos + " questões") : (acertos + " questão")}!`}</div>
         {questoes.map((q, index) => (
           <div className={classes.Questao} style={{ backgroundColor: (q.acerto ? "lightgreen" : "salmon") }}>{`${(index + 1)}) ${q.n1} ${simbolo(operacao)} ${q.n2} = ${q.resultado}`}</div>
@@ -84,6 +85,6 @@ const Exercicios = ({ operacao, setOperacao }) => {
     );
   }
 
-};
+});
 
-export default Exercicios;
+export default motion(Exercicios);

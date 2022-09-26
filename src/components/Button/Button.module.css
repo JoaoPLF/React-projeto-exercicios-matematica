@@ -19,3 +19,7 @@
   cursor: pointer;
   font-size: 18px;
 }
+
+.Button:hover {
+  background-color: rgb(232, 232, 236);
+}
